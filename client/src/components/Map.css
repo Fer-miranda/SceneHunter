@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-location{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 350px;
+    background-color: rgb(30, 36, 37);
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px;
+    padding-top: 0%;
+
+}
+.mapboxgl-popup-content{
+    background-color: rgb(30, 36, 37);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+
+
+}
+.mapboxgl-popup-close-button{
+    color:rgb(255, 255, 255);
+    font-size:20px;
+    margin-right: 5px;
+}
+
+.location{
+    cursor:pointer;
+}
+
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin-right: 10px;
+
+}
+.info{
+    margin-top: 15px;
+    /* font-style: italic; */
+    font-size: 10px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+
+}
+
+h3{
+    font-size: 15px;
+    color: rgb(114, 219, 216);
+    font-weight:normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form{
+    width: 280px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+textarea {
+    border: none;
+    font-size: 13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    background-color: rgb(59, 61, 61);
+    color: whitesmoke;
+    height: 50px;
+    margin-bottom: 10px;
+
+}
+
+input {
+    border: none;
+    font-size: 13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    background-color: rgb(59, 61, 61);
+    color: whitesmoke;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+select{
+    border: none;
+    font-size: 13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    background-color: rgb(59, 61, 61);
+    color: whitesmoke;
+}
+
+.submit-button{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(235, 171, 75);
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100px;
+    align-self: center;
+    margin-top: 10px;
+    font-weight:normal;
+}
+.submit-button:hover{
+    background-color:rgba(201, 147, 53, 0.858);
+}
+
+.header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: row;
+    height: auto;
+    width: 100vw;
+    z-index: 100;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.button-login{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: teal;
+    cursor: pointer;
+    margin-right: 25px;
+    width: 80px;
+    height: 35px;
+    font-size:17px;
+    box-shadow: rgba(173, 178, 183, 0.526) 6px 2px 16px 0px, rgba(232, 225, 225, 0.1) -6px -2px 16px 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button-register{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: tomato;
+    cursor: pointer;
+    margin-right: 25px;
+    width: 80px;
+    height: 35px;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: rgba(173, 178, 183, 0.526) 6px 2px 16px 0px, rgba(232, 225, 225, 0.1) -6px -2px 16px 0px;
+}
+.button-login:hover{
+    background-color: rgb(6, 167, 167);
+    color: rgb(255, 255, 255);
+}
+.button-register:hover{
+    background-color: rgb(234, 186, 115);
+    color: rgb(255, 255, 255);
+}
+
+.button-logout{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(235, 91, 75);
+    cursor: pointer;
+    margin-right: 25px;
+    width: 80px;
+    height: 35px;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: rgba(173, 178, 183, 0.526) 4px 2px 8px 0px, rgba(232, 225, 225, 0.1) -4px -2px -8px 0px;
+}
+
+.button-logout:hover{
+    background-color: rgb(196, 85, 73);
+}
+
+.button-top{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+    margin-right: 25px;
+    width: 150px;
+    height: 35px;
+    font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: rgba(173, 178, 183, 0.526) 4px 2px 8px 0px, rgba(232, 225, 225, 0.1) -4px -2px -8px 0px;
+}
+.button-top:hover{
+    background-color:rgb(49, 49, 49);
+}
+
+
+.título{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 20px;
+    color:tomato;
+    font-size: 25px;
+    font-family: 'Bungee Outline', cursive;
+
+}
+
+h1{
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.delete-edit{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(30, 36, 37);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+span{
+    color: rgb(114, 113, 113);
+    font-size: x-small;
+    font-style: italic;
+}
+
+.Icon{
+    color: rgb(193, 192, 192);
+}
+.Icon:hover{
+    color: rgb(86, 148, 144);
+}
+
+.toast-message {
+    background: darkblue;
+    color: #fff;
+    font-size: 20px;
+    width: 34vw;
+    padding: 30px 20px;
+}
+
+
+.img-container{
+    width:320px;
+    height: 250px;
+    align-self: center;
+    margin-top: 10px;
+}
+img{
+    border-radius: 5px;
+}
+
+.wishlist{
+    font-size: 8px;
+    color: rgb(209, 209, 209);
+    /* margin-top: -10px; */
+    margin-left: 2px;
+    font-weight:lighter;
+}
+.wishlist1{
+    font-size: 8px;
+    color: whitesmoke;
+    font-weight:lighter;
+}
+
+.favoritos{
+    margin-top: 0px;
+}
+
+.likes{
+    color: white;
+}
+
+.buttons-contenedor{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+h3{
+    color:rgb(101, 189, 186);
+    font-size: 15px;
+    text-align:left;
+}

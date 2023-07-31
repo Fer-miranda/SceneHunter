@@ -1,0 +1,21 @@
+.formulario_1{
+    background-color: rgb(30, 36, 37);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0px auto;
+}
+.formulario{
+    text-align:center;
+    background-color: rgb(30, 36, 37);
+    align-content: center;
+    padding: 15px;
+    border-radius: 15px;
+    height: 100%;
+}
+label{
+    text-align: left;
+}
+.text-danger{
+    text-align: left;
+    margin-top: -10px;
+    color: rgb(79, 116, 112);
+}
